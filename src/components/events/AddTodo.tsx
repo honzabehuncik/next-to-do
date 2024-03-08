@@ -19,6 +19,7 @@ const AddTodo = () => {
           name="input"
           type="text"
           placeholder={`${randomTask}...`}
+          required
         />
         <Button type="submit" text="Vytvořit" successButton="true" />
       </div>

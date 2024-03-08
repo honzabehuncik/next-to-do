@@ -21,15 +21,15 @@ async function getData() {
 }
 const Home = async () => {
   const data = await getData();
-    const date = new Date();
-    const currentHour = date.getHours();
-    let greeting = "Dobrý večer!";
-  
-    if (currentHour < 12) {
-      greeting = "Dobré ráno!";
-    } else if (currentHour < 18) {
-      greeting = "Dobré odpoledne!";
-    }
+  const date = new Date();
+  const currentHour = date.getHours();
+  let greeting = "Dobrý večer!";
+
+  if (currentHour < 12) {
+    greeting = "Dobré ráno!";
+  } else if (currentHour < 18) {
+    greeting = "Dobré odpoledne!";
+  }
   return (
     <div className="w-screen py-20 flex justify-center flex-col items-center">
       <span className="text-6xl font-extrabold uppercase mb-1">
